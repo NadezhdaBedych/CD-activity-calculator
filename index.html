@@ -433,6 +433,7 @@
       const interpretationText = document.getElementById('interpretationText');
 
       resultBlock.classList.remove('high', 'low');
+      resultBlock.style.display = 'block';
 
       if (probability >= threshold) {
         resultBlock.classList.add('high');
@@ -446,14 +447,16 @@
     });
 
     function resetForm() {
-      document.getElementById('cdForm').reset();
+  document.getElementById('cdForm').reset();
 
-      const resultBlock = document.getElementById('result');
-      resultBlock.classList.remove('high', 'low');
+  const resultBlock = document.getElementById('result');
 
-      document.getElementById('resultText').textContent = '';
-      document.getElementById('interpretationText').textContent = '';
-    }
+  resultBlock.classList.remove('high', 'low');
+  resultBlock.style.display = 'none';
+
+  document.getElementById('resultText').textContent = '';
+  document.getElementById('interpretationText').textContent = '';
+}
   </script>
 </body>
 </html>
