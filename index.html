@@ -369,9 +369,9 @@
         <div class="details-box">
           <h2>Модель оценки активности БК</h2>
 
-          <p><strong>Чувствительность:</strong> 71,4%.</p>
+          <p><strong>Чувствительность:</strong> 57,1%.</p>
 
-          <p><strong>Специфичность:</strong> 69,0%.</p>
+          <p><strong>Специфичность:</strong> 85,7%.</p>
         </div>
 
         <div class="details-box">
@@ -426,7 +426,7 @@
         + 0.032 * normalizedCalprotectin;
 
       const probability = 1 / (1 + Math.exp(-z));
-      const threshold = 0.230;
+      const threshold = 0.325;
 
       const resultBlock = document.getElementById('result');
       const resultText = document.getElementById('resultText');
